@@ -1,5 +1,6 @@
 
 import app from "./app";
+import { methods } from "./controllers/Users.controller";
 import { connectToDatabase } from "./database/database";
 
 
@@ -15,3 +16,12 @@ const main = async () => {
 };
 
 main();
+
+
+app.get("/users", methods.getUsers);
+app.get("/users/:id", methods.getName);
+app.post("/users/verify", methods.verifyUser);
+app.post("/users", methods.addUser);
+app.put("/users", methods.updateUser);
+app.delete("/users/:id", methods.deleteUser);
+

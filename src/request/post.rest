@@ -1,0 +1,14 @@
+POST  http://localhost:4000/users HTTP/1
+Content-Type: application/json
+
+{
+"name": "Llamas", 
+"u_access": "Permitido", 
+"rfid_id": "0xE1, 0xB2, 0x11, 0x49"
+}
+
+# {
+# "nombres": "Llamas", 
+# "status": "Denegado"
+# }
+
